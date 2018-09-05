@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row" style="margin-top: 60px">
+      <div class="col-6">
+        <label>
+          Name:
+          <input [(ngModel)]="recordName" class="form-control">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+          <label>
+              Comment:
+              <input [(ngModel)]="recordComment" class="form-control">
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <button class="btn btn-primary" (click)="onAdd()">Add</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-primary" (click)="onClear()">Clear</button>
+        </div>
+    </div>
+  </div>
